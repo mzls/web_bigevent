@@ -42,7 +42,7 @@ $(function () {
       username: $("#form_reg [name=username]").val(),
       password: $("#form_reg [name=password]").val(),
     }
-    $.post("http://www.itcbc.com:8080/api/reguser", data, function (res) {
+    $.post("http://www.liulongbin.top:3007/api/reguser", data, function (res) {
       console.log(res)
       if (res.status !== 0) {
         return layer.msg(res.message)
@@ -59,7 +59,7 @@ $(function () {
     // 阻止表单的默认提交行为
     e.preventDefault()
     $.ajax({
-      url: "http://www.itcbc.com:8080/api/login",
+      url: "http://www.liulongbin.top:3007/api/login",
       method: "POST",
       // 快速获取表单中的数据
       data: $(this).serialize(),
