@@ -1,6 +1,8 @@
 .layui-footer {
   text-align: center;
   font-size: 12px;
+  background-color: aliceblue;
+  z-index: 999;
 }
 
 .iconfont {
