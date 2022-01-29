@@ -20,7 +20,7 @@ $(function () {
 
   // 为文件选择框绑定 change 事件
   $("#file").on("change", function (e) {
-    console.log(e)
+    //console.log(e)
     // 获取用户选择的文件
     var filelist = e.target.files
     console.log(filelist)
@@ -58,7 +58,7 @@ $(function () {
         avatar: dataURL,
       },
       success: function (res) {
-        console.log(res)
+        //console.log(res)
         if (res.status !== 0) {
           return layer.msg("上传图片失败！")
         }

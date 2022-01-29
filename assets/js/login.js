@@ -43,7 +43,7 @@ $(function () {
       password: $("#form_reg [name=password]").val(),
     }
     $.post("http://www.liulongbin.top:3007/api/reguser", data, function (res) {
-      console.log(res)
+      //console.log(res)
       if (res.status !== 0) {
         return layer.msg(res.message)
       }
@@ -64,7 +64,7 @@ $(function () {
       // 快速获取表单中的数据
       data: $(this).serialize(),
       success: function (res) {
-        console.log(res)
+        //console.log(res)
         if (res.status !== 0) {
           return layer.msg("登录失败")
         }
