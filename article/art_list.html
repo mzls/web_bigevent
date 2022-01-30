@@ -66,7 +66,13 @@
         <td>{{$value.pub_date|dataFormat}}</td>
         <td>{{$value.state}}</td>
         <td>
-          <button type="button" class="layui-btn layui-btn-xs ">编辑</button>
+          <button
+            type="button"
+            class="layui-btn layui-btn-xs btn-edit"
+            data-id="{{$value.Id}}"
+          >
+            编辑
+          </button>
           <button
             type="button"
             class="layui-btn layui-btn-xs layui-btn-danger btn-delete"
@@ -86,6 +92,7 @@
       <option value="{{$value.Id}}">{{$value.name}}</option>
       {{/each}}
     </script>
+    <!-- 修改分类的弹出层 -->
 
     <!-- 导入 layui 的 js -->
     <script src="../assets/lib/layui/layui.all.js"></script>

@@ -68,6 +68,7 @@ $(function () {
   $("#form-pub").on("submit", function (e) {
     // 1. 阻止表单的默认提交行为
     e.preventDefault()
+    console.log($(this).serialize())
     // 2. 基于 form 表单，快速创建一个 FormData 对象
     var fd = new FormData($(this)[0])
     fd.forEach(function (v, k) {

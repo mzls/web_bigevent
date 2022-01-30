@@ -63,10 +63,11 @@ $(function () {
           return layer.msg("获取分类数据失败")
         }
         // 调用模板引擎渲染分类的可选项
+        console.log(res)
         var htmlStr = template("tpl-cate", res)
         $("[name=cate_id]").html(htmlStr)
         // 重新渲染表单数据
-        form.render()
+        //form.render()
       },
     })
   }
@@ -157,5 +158,10 @@ $(function () {
       })
       layer.close(index)
     })
+  })
+
+  // 点击编辑直接跳转至发布文章
+  $("body").on("click", ".btn-edit", function () {
+    location.href = "../../article/art_pub.html"
   })
 })

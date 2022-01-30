@@ -9,3 +9,7 @@ body {
   background-color: #f2f3f5;
   margin-bottom: 100px;
 }
+
+#form-edit {
+  padding: 20px 15px 0 0;
+}
