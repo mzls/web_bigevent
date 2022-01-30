@@ -159,9 +159,4 @@ $(function () {
       layer.close(index)
     })
   })
-
-  // 点击编辑直接跳转至发布文章
-  $("body").on("click", ".btn-edit", function () {
-    location.href = "../../article/art_pub.html"
-  })
 })
